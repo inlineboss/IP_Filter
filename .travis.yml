@@ -31,7 +31,7 @@ script:
 - cd -
 - cmake .
 - make 
-- - cmake --build . --target package
+- cmake --build . --target package
 deploy:
   provider: script
   skip_cleanup: true
