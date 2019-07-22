@@ -15,13 +15,7 @@ target_include_directories(ip_filter
 )
 
 if (MSVC)
-    target_compile_options(helloworld_cli PRIVATE
-        /W4
-    )
-    target_compile_options(helloworld PRIVATE
-        /W4
-    )
-    target_compile_options(test_version PRIVATE
+    target_compile_options(ip_filter PRIVATE
         /W4
     )
 else ()

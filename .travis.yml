@@ -30,9 +30,7 @@ script:
 - sudo cp *.a /usr/lib
 - cd -
 - cmake .
-- cmake --build .
-- cmake --build . --target test
-- cmake --build . --target package
+- make 
 deploy:
   provider: script
   skip_cleanup: true
