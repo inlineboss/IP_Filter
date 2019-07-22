@@ -24,8 +24,6 @@ else ()
     )
 endif()
 
-
-
 install(TARGETS ip_filter RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
