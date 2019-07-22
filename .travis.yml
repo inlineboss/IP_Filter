@@ -1,4 +1,11 @@
 language: cpp
+addons:
+  apt:
+    packages:
+    - cmake
+    - gcc-8
+    - g++-8
+
 before_script:
 - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 800 --slave /usr/bin/g++ g++ /usr/bin/g++-8
 - sudo apt-get install libboost-test-dev -y
