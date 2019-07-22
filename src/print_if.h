@@ -22,7 +22,8 @@ void print(const std::array<int,4> &item){
 		std::cout << item[0] <<"."<<item[1] <<'.' << item[2] <<'.' << item[3] <<"\n";
 }
 
-void print_if(ip_pool_int& obj, const auto Comp){
+template<typename lamda_>
+void print_if(ip_pool_int& obj, const lamda_ Comp){
 	for(const auto& item: obj){
 		if(
 			 Comp(item[0]) ||
