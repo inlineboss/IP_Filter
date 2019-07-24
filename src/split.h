@@ -39,7 +39,6 @@ cut_item(const std::string &str,
 	} else{
 		return substring;
 	}
-
 }
 
 template <typename... Args>
@@ -48,8 +47,5 @@ split(const std::string &str, char d) {
 	std::string::size_type start_pos = 0;
 	return std::make_tuple<const Args...>(cut_item<Args>(str,d, start_pos)...);
 }
-
-
-
 
 #endif /* SPLIT_H_ */

@@ -1,10 +1,12 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.8)
 
 project(ip_filter VERSION 0.0.1$ENV{TRAVIS_BUILD_NUMBER})
 
 configure_file(version.h.in version.h)
 
 add_executable(ip_filter src/ip_filter.cpp)
+
+set_property(TARGET ip_filter PROPERTY CXX_STANDARD 17)
 
 set_target_properties(ip_filter PROPERTIES
     CXX_STANDARD 17
